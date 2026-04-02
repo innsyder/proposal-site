@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Will You Be My Girlfriend?, [EWERE]?</h1>
+    </header>
+
+    <section class="about-us">
+        <h2>Our Love Story</h2>
+        <p>It started as strangers meeting now into a beautiful love story.]</p>
+        <img src="your-photo-url.jpg" alt="A special moment together" />
+    </section>
+
+    <section class="photo-gallery">
+        <h2>Moments Together</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Memory 1">
+            <img src="photo2.jpg" alt="Memory 2">
+            <img src="photo3.jpg" alt="Memory 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section class="proposal">
+        <h2>The Proposal</h2>
+        <p>I can't imagine my life without you. You're my best friend and soulmate. So, will you make me the happiest person alive and marry me?</p>
+        <button onclick="revealRing();">Click to Reveal!</button>
+        <div id="ring" style="display:none;">
+            <p>💍 Here’s the ring! 💍</p>
+            <img src="ring-image-url.jpg" alt="Engagement Ring" />
+        </div>
+    </section>
+
+    <footer>
+        <p>Can't wait to start our forever together!</p>
+    </footer>
+</div>
+
+<script>
+function revealRing() {
+    document.getElementById('ring').style.display = 'block';
+}
+</script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: #e63946;
+    }
+    .gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+    .gallery img {
+        width: 150px;
+        height: auto;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    .proposal button {
+        padding: 10px 20px;
+        background-color: #f1faee;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .proposal button:hover {
+        background-color: #a8dadc;
+    }
+</style>
+
+</body>
+</html>
